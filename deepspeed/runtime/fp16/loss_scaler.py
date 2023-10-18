@@ -122,7 +122,7 @@ class DynamicLossScaler(LossScalerBase):
                  min_scale=1,
                  delayed_shift=1,
                  consecutive_hysteresis=False,
-                 raise_error_at_min_scale=True,
+                 raise_error_at_min_scale=False,
                  dtype=torch.half):
         super(DynamicLossScaler, self).__init__(init_scale)
         self.cur_iter = 0
